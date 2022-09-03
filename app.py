@@ -41,3 +41,8 @@ def hello(path):
         html = m.convert(f.read())
     m.reset()
     return "{}\n{}\n{}".format(HEADER, html, FOOTER)
+
+
+@app.route('/hello')
+def test():
+    return 'Hello, world2!'
